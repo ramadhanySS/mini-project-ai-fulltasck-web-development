@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1eb" />
+    <meta name="description" content="Escentric 04 100 ml, aroma Javanol, grapefruit, lime, dan sandalwood." />
+    <meta name="product-api-url" content="http://localhost:3000/api" />
+    <meta name="product-name" content="Escentric 04" />
+    <title>Escentric 04 | Escentric Molecules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="checkout.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">Pengiriman gratis untuk pesanan di atas £80 <span aria-hidden="true">✳</span></div>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Escentric Molecules, beranda">ESCENTRIC<br /><span>MOLECULES</span></a>
+      <nav class="primary-nav" aria-label="Navigasi utama">
+        <a href="index.html#detail">Parfum</a>
+        <a href="index.html#cerita">Molecule 01</a>
+        <a href="escentric-04.html" aria-current="page">Escentric 04</a>
+      </nav>
+      <button class="bag-button" type="button" aria-label="Tas belanja, 0 item">Tas <span id="bag-count">0</span></button>
+    </header>
+
+    <main id="top">
+      <div class="breadcrumbs"><a href="index.html">Beranda</a><span>/</span><a href="index.html#top">Escentric</a><span>/</span><span id="breadcrumb-product-name">Escentric 04</span></div>
+      <p class="product-status" id="product-status" role="status" aria-live="polite">Memuat produk…</p>
+
+      <section class="product-layout" aria-labelledby="product-title">
+        <div class="gallery" aria-label="Galeri produk">
+          <div class="thumbnail-list" role="group" aria-label="Pilih gambar produk">
+            <button class="thumbnail is-active" type="button" aria-label="Tampilkan botol Escentric 04" aria-pressed="true" data-image="https://cdn.shopify.com/s/files/1/0855/9220/files/E04_100ml_Solo_St_On_Bottle.jpg?v=1739882715">
+              <img src="https://cdn.shopify.com/s/files/1/0855/9220/files/E04_100ml_Solo_St_On_Bottle.jpg?v=1739882715&width=180" alt="Botol Escentric 04 100 ml" />
+            </button>
+            <button class="thumbnail" type="button" aria-label="Tampilkan botol dan kemasan Escentric 04" aria-pressed="false" data-image="https://cdn.shopify.com/s/files/1/0855/9220/files/E04_100ml_Bottle_Carton_St_On.jpg?v=1739882715">
+              <img src="https://cdn.shopify.com/s/files/1/0855/9220/files/E04_100ml_Bottle_Carton_St_On.jpg?v=1739882715&width=180" alt="Botol dan kemasan Escentric 04" />
+            </button>
+          </div>
+          <button class="hero-image-wrap zoom-trigger" id="zoom-trigger" type="button" aria-label="Perbesar gambar produk">
+            <img id="hero-image" class="hero-image" src="https://cdn.shopify.com/s/files/1/0855/9220/files/E04_100ml_Solo_St_On_Bottle.jpg?v=1739882715" alt="Botol Escentric 04 100 ml" />
+            <span class="zoom-hint" aria-hidden="true">Perbesar <span>+</span></span>
+            <span class="image-index" id="image-index">01 / 02</span>
+          </button>
+        </div>
+
+        <div class="product-info" id="detail">
+          <p class="eyebrow">Escentric collection <span>·</span> Eau de Toilette</p>
+          <h1 id="product-title">Escentric 04</h1>
+          <p class="product-price"><strong id="product-price">£130</strong><span id="product-size">100 ml</span></p>
+          <p class="intro" id="product-intro">Escentric 04 adalah ode untuk kesegaran futuristik Javanol, molekul sandalwood yang transparan, dengan aksen grapefruit merah muda dan lime.</p>
+          <div class="accords" id="product-accords" aria-label="Karakter aroma">
+            <span>Grapefruit</span><span>Sandalwood</span><span>Woody</span><span>Fresh</span>
+          </div>
+
+          <div class="purchase-row">
+            <div class="quantity-control" aria-label="Jumlah produk">
+              <button type="button" id="quantity-minus" aria-label="Kurangi jumlah">−</button>
+              <output id="quantity" aria-live="polite">1</output>
+              <button type="button" id="quantity-plus" aria-label="Tambah jumlah">+</button>
+            </div>
+            <button class="add-button" id="add-to-bag" type="button">Tambah ke tas <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="shipping-note"><span aria-hidden="true">✳</span> Complimentary shipping untuk pesanan di atas £80</p>
+
+          <button class="wishlist-button" id="wishlist-button" type="button" aria-pressed="false">
+            <span class="wishlist-icon" aria-hidden="true">♡</span>
+            <span id="wishlist-label">Tambah ke wishlist</span>
+          </button>
+
+          <div class="product-details" id="cerita">
+            <details open>
+              <summary>Deskripsi <span aria-hidden="true">+</span></summary>
+              <p id="product-description">Escentric 04 menonjolkan Javanol, molekul sandalwood yang transparan, dengan kesegaran grapefruit merah muda dan lime. Juniper, pink pepper, orris, dan rose melengkapi aroma woody yang segar dan berkilau.</p>
+            </details>
+            <details>
+              <summary>Karakter aroma <span aria-hidden="true">+</span></summary>
+              <p id="product-accords-description">Grapefruit · Sandalwood · Woody · Fresh</p>
+            </details>
+            <details>
+              <summary>Pengiriman &amp; pengembalian <span aria-hidden="true">+</span></summary>
+              <p>Informasi pada halaman ini adalah simulasi untuk pembelajaran. Pengiriman dan transaksi nyata tidak tersedia.</p>
+            </details>
+          </div>
+          <p class="learning-note">Halaman demo pembelajaran. Tidak memproses pembayaran.</p>
+        </div>
+      </section>
+
+      <section class="related-products" aria-labelledby="related-products-title">
+        <p class="eyebrow">Discover more</p>
+        <h2 id="related-products-title">Produk lainnya</h2>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+    <dialog class="zoom-dialog" id="image-zoom" aria-label="Galeri gambar produk">
+      <button class="zoom-close" id="zoom-close" type="button" aria-label="Tutup galeri gambar">×</button>
+      <button class="zoom-navigation zoom-previous" id="zoom-previous" type="button" aria-label="Gambar sebelumnya">‹</button>
+      <div class="zoom-stage"><img id="zoom-image" alt="" /></div>
+      <button class="zoom-navigation zoom-next" id="zoom-next" type="button" aria-label="Gambar berikutnya">›</button>
+      <div class="zoom-footer">
+        <span class="zoom-position" id="zoom-position" aria-live="polite">01 / 02</span>
+        <div class="zoom-thumbnails" id="zoom-thumbnails" role="group" aria-label="Pilih gambar produk"></div>
+      </div>
+    </dialog>
+    <dialog class="checkout-panel" id="checkout-panel" aria-labelledby="checkout-title">
+      <div class="checkout-header">
+        <div><p class="eyebrow">Tas belanja</p><h2 id="checkout-title">Checkout</h2></div>
+        <button class="checkout-close" id="checkout-close" type="button" aria-label="Tutup checkout">×</button>
+      </div>
+      <div class="checkout-content">
+        <p class="checkout-status" id="checkout-status" role="status" aria-live="polite"></p>
+        <div class="checkout-items" id="checkout-items"></div>
+        <p class="checkout-empty" id="checkout-empty">Tas Anda masih kosong.</p>
+        <div class="checkout-total"><span>Total</span><strong id="checkout-total">£0</strong></div>
+        <form class="checkout-form" id="checkout-form">
+          <h3>Informasi pengiriman</h3>
+          <label>Nama lengkap<input name="customer_name" autocomplete="name" maxlength="120" required /></label>
+          <label>Email<input name="email" type="email" autocomplete="email" maxlength="254" required /></label>
+          <label>Alamat pengiriman<textarea name="shipping_address" autocomplete="street-address" minlength="8" maxlength="500" required></textarea></label>
+          <p class="checkout-disclaimer">Demo transaksi. Tidak ada pembayaran yang diproses.</p>
+          <button class="add-button checkout-submit" id="checkout-submit" type="submit">Buat pesanan <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </dialog>
+    <footer class="site-footer"><span>Escentric Molecules</span><span>Exploration through fragrance</span><span>Product study · 2026</span></footer>
+  </body>
+</html>
